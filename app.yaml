@@ -1,0 +1,13 @@
+apiVersion: helm.fluxcd.io/v1
+kind: HelmRelease
+metadata:
+  name: azure-arc-minio
+  namespace: arc-k8s-minio
+spec:
+  releaseName: arc-k8s-minio
+  chart:
+    git: https://github.com/minio/minio
+    ref: master
+    path: helm/minio
+  values:
+    serviceName: arc-k8s-minio
