@@ -6,8 +6,8 @@ metadata:
 spec:
   releaseName: arc-k8s-demo
   chart:
-    git: https://github.com/Azure/arc-helm-demo
+    git: https://github.com/minio/minio
     ref: master
-    path: charts/azure-arc-sample
+    path: helm/minio
   values:
     serviceName: arc-k8s-demo
